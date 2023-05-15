@@ -1,25 +1,26 @@
 import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass, faBell } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
     return (
         <div className="navbar">
-            <span className='netflixLogo'>Netflix</span>
-            <ul className='primaryNavLinks'>
-                <li className='navLinks'>Home</li>
-                <li className='navLinks'>TV Shows</li>
-                <li className='navLinks'>Movies</li>
-                <li className='navLinks'>New & Popular</li>
-                <li className='navLinks'>My list</li>
-                <li className='navLinks'>Browse by Languages</li>
-                <FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#ffffff",}} />
-            </ul>
-            <div className='secondaryNavLinks'>
-               <span>searchIcon</span>
-               <span>DVD</span>
-               <span>notification</span>
-               <span>Profile Image</span>
+            <div className='container'>
+                <div className='primaryNavLinks'>
+                    <img className='netflixLogo' src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png" alt="" />
+                    <span className='leftLinks'>Home</span>
+                    <span className='leftLinks'>TV Shows</span>
+                    <span className='leftLinks'>Movies</span>
+                    <span className='leftLinks'>New & Popular</span>
+                    <span className='leftLinks'>My list</span>
+                    <span className='leftLinks'>Browse by Languages</span>
+                </div>
+                <div className='secondaryNavLinks'>
+                    <FontAwesomeIcon className='rightLinks' icon={faMagnifyingGlass} style={{color: "#ffffff",}} />
+                    <span className='rightLinks'>DVD</span>
+                    <FontAwesomeIcon className='rightLinks' icon={faBell} style={{color: '#ffffff'}} />
+                    <img className='profilePic rightLinks' src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="" />
+                </div>
             </div>
         </div>
     )

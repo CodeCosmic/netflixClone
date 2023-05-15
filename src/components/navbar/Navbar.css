@@ -1,11 +1,50 @@
-.netflixLogo{
-    color: red;
+.navbar{
+    width: 100%;
+    color: #ffffff;
+    font-size: 14px;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
 }
 
- .navLinks{
-   color: white;
- }
+.container {
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
 
- body {
-     background-color: black;
- }
+.primaryNavLinks {
+    display: flex;
+    align-items: center;
+}
+
+.secondaryNavLinks{
+    display: flex;
+    align-items: center;
+}
+
+.leftLinks{
+   margin-right: 20px;
+   cursor: pointer;
+}
+
+.rightLinks{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.netflixLogo{
+    height: 25px;
+    width: 80px;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+.profilePic{
+    height: 30px;
+    width: 30px;
+}
+
